@@ -13,7 +13,7 @@
 ### Reto 1: El problema de la tienda de Don Pepe
 
 **Evidencia:**
-![captura](""C:\Users\ginas\OneDrive\Desktop\Universidad\DOWS\DOSW-Bootcamp-Laboratorio-02\imagenesretos\reto1sol.png"")
+![captura]("C:\Users\ginas\OneDrive\Desktop\Universidad\DOWS\DOSW-Bootcamp-Laboratorio-02\imagenesretos\reto1sol.png")
 
 **Descripción:**
 El reto de la tienda de Don Pepe consiste en crear un sistema de ventas sencillo donde se agregue productos a un carrito de compras, recibaun descuento segun el tipo de cliente y que obtenga un recibo al finalizar la compra pero el recibo debe mostrar ciertas especificaciones. 
