@@ -68,8 +68,31 @@ El Carrito depende de la abstracción Cliente, no de una implementación especí
 ### Reto 3: El Reino de los Vehiculos
 
 **Evidencia:**
-**Descripción:**
+![Captura](./imagenesretos/reto3sol.png)
 
+**Descripción:**
+Descripción del Reto #3: El Reino de los Vehículos 
+Este desafío consiste en diseñar e implementar un sistema para una concesionaria multimodelo capaz de gestionar la venta de diversos medios de transporte (terrestres, acuáticos y aéreos) bajo diferentes estándares de calidad.
+
+El sistema debe permitir:
+
+Gestión de Familias de Productos: Capacidad para manejar vehículos de distintas naturalezas como Autos, Bicicletas y Motos (Tierra); Lanchas, Veleros y Jet Skis (Mar); y Aviones, Avionetas o Helicópteros (Aire).
+
+Segmentación por Categorías: Cada vehículo debe pertenecer a una categoría específica (Económico, Lujo o Usado), la cual altera dinámicamente sus atributos técnicos y comerciales (velocidad máxima, precio y equipamiento).
+
+Compra Múltiple: Los usuarios pueden seleccionar una cantidad indefinida de vehículos con diferentes especificaciones en una sola sesión de compra.
+
+**Patrón de Diseño:** 
+Creacional 
+
+**Patrón Utilizado:**
+Factory Method (Fábrica)
+
+**Justificación:**
+Se utilizó este patrón para centralizar la creación de los diferentes tipos de vehículos en una sola clase (VehiculoFactory). Esto evita que el código cliente tenga que conocer las clases específicas de cada vehículo y categoría, permitiendo que el sistema sea escalable (podríamos añadir "Vehículos Espaciales" mañana sin cambiar la lógica de compra).
+
+**Cómo lo aplico:** 
+Se creó una interfaz/clase abstracta Vehiculo y una fábrica que, mediante parámetros de tipo y categoría, instancia el objeto correcto. Al final, se procesa la lista de objetos creados mediante un Stream para consolidar el precio total.
 ---
 
 ### Reto 4: La Estafa de la Casa de Cambio
